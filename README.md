@@ -1,8 +1,8 @@
-# crm
+# 开源短信平台
 
-> A Vue.js project
+> 这是一个开源的短信平台管理项目
 
-## Build Setup
+## 运行步骤
 
 ``` bash
 # install dependencies
@@ -18,4 +18,9 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 目录结构
+/config 配置文件，包含跟后台交互地址
+/public 公共目录
+/src  源码目录
+/static 静态文件地址
+
