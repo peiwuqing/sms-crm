@@ -27,7 +27,6 @@ Vue.prototype.$axios = axios;
 Vue.prototype.$cookies = cookies;
 Vue.prototype.$baseUrl = process.env.baseUrl
 Vue.prototype.$phoneBarConf = process.env.phoneBarConf
-Vue.prototype.$messageSocket = process.env.messageSocket
 Vue.prototype.$nullParam=removeNullKey;
 Vue.prototype.$price=price;
 window.$day = dayjs;

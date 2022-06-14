@@ -1,12 +1,10 @@
 'use strict'
 let params = process.argv[2]
 let baseUrl = ''
-let messageSocket = '';
 let phoneBarConf = {}
 switch (params) {
   case '--env=test':
-    baseUrl = '"http://39.98.229.167:16005/"';
-    messageSocket = '"ws://36.137.200.184:17098"';
+    baseUrl = '"http://127.0.0.1:17098/"';
     // phoneBarConf = {
     //   socketUrl:'"ws://8.142.69.19:8081/agents"',
     //   domain:'"founder"',
@@ -14,8 +12,7 @@ switch (params) {
     // };
     break
   case '--env=prod':
-    baseUrl = '"http://39.98.229.167:16005/"';
-    messageSocket = '"ws://36.137.200.184:17098"';
+    baseUrl = '"http://127.0.0.1:17098/"';
     // phoneBarConf = {
     //   socketUrl:'"ws://8.142.69.19:8081/agents"',
     //   domain:'"founder"',
@@ -23,8 +20,7 @@ switch (params) {
     // };
     break
   default:
-    baseUrl = '"http://39.98.229.167:16005/"';
-    messageSocket = '"ws://36.137.200.184:17098"';
+    baseUrl = '"http://127.0.0.1:17098/"';
     // phoneBarConf = {
     //   socketUrl:'"ws://8.142.69.19:8081/agents"',
     //   domain:'"founder"',
@@ -34,6 +30,5 @@ switch (params) {
 module.exports = {
   NODE_ENV: '"production"',
   baseUrl: baseUrl,
-  messageSocket:messageSocket,
   phoneBarConf:phoneBarConf,
 }

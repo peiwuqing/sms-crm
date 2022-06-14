@@ -62,9 +62,6 @@
         };
       },
       mounted() {
-        if(window.$messageSocket){
-          window.$messageSocket.emit("unsubcribe")
-        }
       },
       methods: {
         submitForm(formName) {

@@ -150,7 +150,6 @@ export default {
   methods: {
     init_socket(){
       var that = this;
-      let socketUrl = this.$messageSocket;
       var socket = socketio(socketUrl,{
         path:'',
         transports:['websocket', 'xhr-polling', 'jsonp-polling'],
@@ -162,7 +161,6 @@ export default {
         })
       })
       this.initIsPlay()
-      window.$messageSocket = socket;
     },
     initIsPlay(){
       let son = localStorage.getItem("son")
@@ -259,7 +257,6 @@ export default {
     },
     logout() {
       this.$store.dispatch('LogOut').then(() => {
-        //window.$messageSocket.emit("unsubcribe")
         location.reload()// In order to re-instantiate the vue-router object to avoid bugs
       })
     }
