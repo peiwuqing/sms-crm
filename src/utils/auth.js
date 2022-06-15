@@ -1,10 +1,10 @@
 import Cookies from 'js-cookie'
 
 const TokenKey = 'token'
-const UserData = '__CRM__USERDATA__'
+const UserData = '__SMS__CRM__USERDATA__'
 import { constantRouterMap } from '@/router'
 
-var publicRoter=["/auth/message","/dashboard"]
+var publicRoter=["/dashboard"]
 export function getToken() {
   return Cookies.get(TokenKey)
 }

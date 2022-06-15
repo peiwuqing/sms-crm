@@ -13,4 +13,3 @@ export function upload(param){
     data:param,
   })
 }
-
