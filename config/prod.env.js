@@ -4,7 +4,7 @@ let baseUrl = ''
 let phoneBarConf = {}
 switch (params) {
   case '--env=test':
-    baseUrl = '"http://127.0.0.1:17098/"';
+    baseUrl = '"http://oss-server.xb-sms.com/"';
     // phoneBarConf = {
     //   socketUrl:'"ws://8.142.69.19:8081/agents"',
     //   domain:'"founder"',
@@ -12,7 +12,7 @@ switch (params) {
     // };
     break
   case '--env=prod':
-    baseUrl = '"http://127.0.0.1:17098/"';
+    baseUrl = '"http://oss-server.xb-sms.com/"';
     // phoneBarConf = {
     //   socketUrl:'"ws://8.142.69.19:8081/agents"',
     //   domain:'"founder"',
@@ -20,7 +20,7 @@ switch (params) {
     // };
     break
   default:
-    baseUrl = '"http://127.0.0.1:17098/"';
+    baseUrl = '"http://oss-server.xb-sms.com/"';
     // phoneBarConf = {
     //   socketUrl:'"ws://8.142.69.19:8081/agents"',
     //   domain:'"founder"',
