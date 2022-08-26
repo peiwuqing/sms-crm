@@ -38,10 +38,8 @@
   </div>
 </template>
 <script>
-    import Sidentify from '@/components/common/Sidentify/index'
     export default {
       components: {
-        'v-sidentify':Sidentify
       },
       data() {
         return {
