@@ -1,6 +1,5 @@
 import request from '../utils/request'
 import Vue from 'vue'
-import store from '@/store'
 
 /**
  * 获取客户分页列表

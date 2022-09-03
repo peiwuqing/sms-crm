@@ -12,7 +12,5 @@ const getters = {
     cachedViews: state => state.tagsView.cachedViews,
     agentState: state => state.chat.agentState,
     recordSrc:state=>state.app.recordSrc,
-    showDialog: state=>state.app.showDialog,
-    showDrawer: state=>state.app.showDrawer
 }
 export default getters

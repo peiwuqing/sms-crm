@@ -1,6 +1,5 @@
 import request from '../utils/request'
 import Vue from 'vue'
-import store from '@/store'
 
 
 /**

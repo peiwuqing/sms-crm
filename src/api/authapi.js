@@ -1,6 +1,5 @@
 import request from '../utils/request'
 import Vue from 'vue'
-import store from '@/store'
 
 /**
  * 所有菜单
@@ -352,94 +351,11 @@ export function queryRegin(queryParams) {
 
 }
 
-/**
- * 部门公海分页列表
- */
-export function queryPoolPager(queryParams) {
-  return request({
-    url: Vue.prototype.$baseUrl+'api/v1.0/customer/pool/pager',
-    method: 'get',
-    params:queryParams
-  })
-}
-/**
- * 部门公海列表
- */
-export function queryPoolList(queryParams) {
-  return request({
-    url: Vue.prototype.$baseUrl+'api/v1.0/customer/pool/list',
-    method: 'get',
-    params:queryParams
-  })
-}
-/**
- * 部门公海新增
- */
-export function addPool(queryParams) {
-  return request({
-    url: Vue.prototype.$baseUrl+'api/v1.0/customer/pool',
-    method: 'post',
-    data:queryParams
-  })
-}
-/**
- * 部门公海编辑
- */
-export function editPool(queryParams) {
-  return request({
-    url: Vue.prototype.$baseUrl+`api/v1.0/customer/pool/${queryParams.id}`,
-    method: 'put',
-    data:queryParams
-  })
-}
-/**
- * 部门公海删除
- */
-export function deletePool(queryParams) {
-  return request({
-    url: Vue.prototype.$baseUrl+`api/v1.0/customer/pool/${queryParams.id}`,
-    method: 'delete',
-    data:queryParams
-  })
-}
-/**
- * 获取兼职部门
- */
-export function partTimeList(param){
-  return request({
-    url: Vue.prototype.$baseUrl+`api/v1.0/sys/parttime/list`,
-    method: 'get',
-    params:param,
-  })
-}
-/**
- * 用户兼职部门新增
- */
-export function addPartTime(param){
-  return request({
-    url: Vue.prototype.$baseUrl+`api/v1.0/sys/parttime`,
-    method: 'post',
-    data:param,
-  })
-}
-/**
- * 密码重置
- */
 export function resetPwd(param){
   return request({
     url: Vue.prototype.$baseUrl+`api/v1.0/auth/updatePwd`,
     method: 'post',
     data:param,
-  })
-}
-/**
- * 获取登录日志
- */
-export function queryLoginLog(param){
-  return request({
-    url: Vue.prototype.$baseUrl+`api/v1.0/log/login`,
-    method: 'get',
-    params:param,
   })
 }
 
