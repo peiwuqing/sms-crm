@@ -34,7 +34,6 @@ router.beforeEach((to, from, next) => {
               NProgress.done()
             }else{
               router.push({...to, replace: true},onAbort=>{});
-              //next({...to, replace: true},()=>{}) // hack方法 确保addRoutes已完成 ,set the replace: true so the navigation will not leave a history record
               NProgress.done()
             }
 
